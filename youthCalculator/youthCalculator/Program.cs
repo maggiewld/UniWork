@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace youthCalculator
 {
@@ -10,11 +6,13 @@ namespace youthCalculator
     {
         static void Main(string[] args)
         {
-            //TODO Modify the program so it asks for the comparison age as well
+            /*TODO Modify the program so it asks for the comparison age as well
+             *TODO Modify the program so it calculates and displays the age difference in months(to the nearest year).
+             */
             
             //Variables
             int comparisonAge;
-            int userAge, difference;
+            int userAge, difference, differenceMonths, nearestYear;
             string userName;
             
 
@@ -29,9 +27,14 @@ namespace youthCalculator
             Console.WriteLine("What's your name: ");
             userName = Console.ReadLine();
 
-            //Display how much younger than Ian they are (Ian = 43yo)
+            //Display the age difference
             difference = comparisonAge - userAge;
             Console.WriteLine("{0}, there is {1} years before you are {2}.", userName, difference, comparisonAge);
+
+            differenceMonths = difference * 12;
+            Console.WriteLine("difference in months: " + differenceMonths);
+            
+            //Console.WriteLine("The difference in months is {0}, rounded to the nearest year is {1}", differenceMonths, nearestYear)
 
             Console.ReadKey();
         }
