@@ -24,6 +24,8 @@ namespace gettingNumbers
             Console.WriteLine("Result plus one is: {0}", numberFromUser);
 
             Console.ReadLine();
+
+            //Q. How could you modify the program so that it will work when the user enters '5.5'?
         }
     }
 }
