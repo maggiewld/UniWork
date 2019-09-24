@@ -14,6 +14,7 @@ namespace gettingNumbers
             string userInput = "";
 
             Console.WriteLine("Please enter a number between 1 and 10. Then press Enter.");
+            userInput = Console.ReadLine();
 
             //Convert userInput from string to int
             numberFromUser = Int32.Parse(userInput);
