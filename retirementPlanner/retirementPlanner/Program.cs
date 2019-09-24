@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Author: Maggie
+//SID: [REDACTED]
+//Edited: 24Sep2019
+
+using System;
 
 namespace retirementPlanner
 {
@@ -10,6 +10,13 @@ namespace retirementPlanner
     {
         static void Main(string[] args)
         {
+            //Variables
+            string InputAge;
+            int age;
+            int oldAge = 65;
+            int difference;
+
+
         }
     }
 }
