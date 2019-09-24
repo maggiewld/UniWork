@@ -10,8 +10,10 @@ namespace youthCalculator
     {
         static void Main(string[] args)
         {
+            //TODO Modify the program so it asks for the comparison age as well
+            
             //Variables
-            int ianAge = 43;
+            int comparisonAge;
             int userAge, difference;
             string userName;
             
@@ -20,13 +22,16 @@ namespace youthCalculator
             Console.WriteLine("How old are you in years: ");
             userAge = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Enter an age to compare to: ");
+            comparisonAge = Convert.ToInt32(Console.ReadLine());
+
             //Ask user for name
             Console.WriteLine("What's your name: ");
             userName = Console.ReadLine();
 
             //Display how much younger than Ian they are (Ian = 43yo)
-            difference = ianAge - userAge;
-            Console.WriteLine("{0}, you are {1} younger than Ian.", userName, difference);
+            difference = comparisonAge - userAge;
+            Console.WriteLine("{0}, there is {1} years before you are {2}.", userName, difference, comparisonAge);
 
             Console.ReadKey();
         }
