@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace welcomeMessage
 {
@@ -10,6 +6,14 @@ namespace welcomeMessage
     {
         static void Main(string[] args)
         {
+            string name;
+            string message;
+            Console.WriteLine("Please enter your name: ");
+            name = Console.ReadLine();
+
+            message = "Welcome " + name + " to " + "my program.";
+            Console.WriteLine(message);
+            Console.ReadLine();
         }
     }
 }
