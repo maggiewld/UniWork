@@ -22,7 +22,8 @@ namespace businessCard
             employer = Console.ReadLine();
 
             //Print to console in the order: employer, name, telephone number
-
+            Console.WriteLine("Your employer is: " + employer + "\nYour name is: " + name + "\nYou telephone number is: " + telNumber);
+            Console.ReadLine();
         }
     }
 }
