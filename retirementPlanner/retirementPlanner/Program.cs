@@ -13,19 +13,20 @@ namespace retirementPlanner
         {
             //Variables
             string InputAge;
-            int age;
-            int oldAge = 65;
-            int difference;
-
-            Console.WriteLine("Please enter your age in whole years");
+            decimal age, difference;
+            decimal oldAge = 65;
+           
+            Console.WriteLine("Please enter your age");
             InputAge = Console.ReadLine();
 
             //Convert console input from string to integer
-            age = Convert.ToInt32(InputAge);
+            age = Convert.ToDecimal(InputAge);
 
             difference = oldAge - age;
             Console.WriteLine("In {0} years you will be 65 years old.", difference);
             Console.ReadLine();
+
+            //Modify code to accept fractional values - DONE using decimals.
         }
     }
 }
