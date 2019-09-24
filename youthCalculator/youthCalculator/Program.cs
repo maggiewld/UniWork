@@ -12,18 +12,23 @@ namespace youthCalculator
         {
             //Variables
             int ianAge = 43;
-            int userAge;
+            int userAge, difference;
             string userName;
+            
 
             //Ask user for age in years
             Console.WriteLine("How old are you in years: ");
-            userAge = Console.ReadLine();
+            userAge = Convert.ToInt32(Console.ReadLine());
 
             //Ask user for name
             Console.WriteLine("What's your name: ");
             userName = Console.ReadLine();
 
             //Display how much younger than Ian they are (Ian = 43yo)
+            difference = ianAge - userAge;
+            Console.WriteLine("You are {0} younger than Ian.", difference);
+
+            Console.ReadKey();
         }
     }
 }
