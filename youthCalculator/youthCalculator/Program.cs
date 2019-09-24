@@ -26,7 +26,7 @@ namespace youthCalculator
 
             //Display how much younger than Ian they are (Ian = 43yo)
             difference = ianAge - userAge;
-            Console.WriteLine("You are {0} younger than Ian.", difference);
+            Console.WriteLine("{0}, you are {1} younger than Ian.", userName, difference);
 
             Console.ReadKey();
         }
