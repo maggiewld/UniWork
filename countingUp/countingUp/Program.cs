@@ -26,6 +26,20 @@ namespace countingUp
 
             //Readline to make program pause
             Console.ReadLine();
+
+            //Q. How would you alter this code to add up the numbers 2.2, 4.7 and 6.3 ?
+
+            double decimalTotal = 0.0;
+                        
+            Console.WriteLine("Total currently: {0}", decimalTotal);
+            decimalTotal += 2.2;
+            Console.WriteLine("Total + 2.2 = {0}", decimalTotal);
+            decimalTotal += 4.7;
+            Console.WriteLine("Total + 4.7 = {0}", decimalTotal);
+            decimalTotal += 6.3;
+            Console.WriteLine("Total + 6.3 = {0}", decimalTotal);
+
+            Console.ReadLine();
         }
     }
 }
