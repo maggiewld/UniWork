@@ -14,7 +14,12 @@ namespace businessCard
             string name, telNumber, employer;
 
             //Ask user for name, telephone number and employer
-
+            Console.WriteLine("What is your name: ");
+            name = Console.ReadLine();
+            Console.WriteLine("What is your number: ");
+            telNumber = Console.ReadLine();
+            Console.WriteLine("Who do you work for: ");
+            employer = Console.ReadLine();
 
             //Print to console in the order: employer, name, telephone number
 
