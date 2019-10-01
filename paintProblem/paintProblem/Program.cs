@@ -9,7 +9,7 @@ namespace paintProblem
             int paintCoverage = 100;
             int roomWidth, roomLength, roomHeight, roomArea;
             int windowHeight, windowWidth, windowArea;
-            int availableWall;
+            int availableWall, paintRequired;
             
             //Calculate room area
                 //User input
@@ -40,7 +40,7 @@ namespace paintProblem
                 //Area of paintable wall
                 availableWall = roomArea - windowArea;
             //Calculate how much paint is required for user's room
-                
+                paintRequired = availableWall / paintCoverage;
         }
     }
 }
