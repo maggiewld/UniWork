@@ -14,7 +14,7 @@ namespace paintProblem
             //Calculate room area
                 //User input
                 Console.WriteLine("Input wall length: ");
-                    roomLength = Convert.ToInt32(Console.ReadLine());
+                roomLength = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Input wall width: ");
                 roomWidth = Convert.ToInt32(Console.ReadLine());                
@@ -23,7 +23,7 @@ namespace paintProblem
                 roomHeight = Convert.ToInt32(Console.ReadLine());
 
             //Room area = 2(H*W)+2(H*L)+(W*L)
-            roomArea = (2*(roomHeight * roomWidth)) + (2*(roomHeight * roomLength)) + (roomWidth * roomLength);
+                roomArea = (2*(roomHeight * roomWidth)) + (2*(roomHeight * roomLength)) + (roomWidth * roomLength);
 
             //Calculate window area
                 //User input
@@ -41,6 +41,10 @@ namespace paintProblem
                 availableWall = roomArea - windowArea;
             //Calculate how much paint is required for user's room
                 paintRequired = availableWall / paintCoverage;
+
+                Console.WriteLine("The total paintable area of your room is {0}. You will need {1} gallons to paint it.", availableWall, paintRequired);
+
+                Console.ReadKey();
         }
     }
 }
