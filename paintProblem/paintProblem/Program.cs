@@ -7,33 +7,33 @@ namespace paintProblem
         static void Main(string[] args)
         {
             //Coverage of chosen paint
-            byte paint;
-            byte roomWidth, roomLength, roomHeight;
-            byte windowHeight, windowWidth, windowArea;
+            int paint;
+            int roomWidth, roomLength, roomHeight;
+            int windowHeight, windowWidth, windowArea;
 
 
             //Calculate room area
                 //User input
                 Console.WriteLine("Input wall length: ");
-                roomLength = Convert.ToByte(Console.ReadLine());
+                roomLength = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Input wall width: ");
-                roomWidth = Convert.ToByte(Console.ReadLine());                
+                roomWidth = Convert.ToInt32(Console.ReadLine());                
       
                 Console.WriteLine("Input wall height: ");
-                roomHeight = Convert.ToByte(Console.ReadLine());
+                roomHeight = Convert.ToInt32(Console.ReadLine());
 
 
             //Calculate window area
                 //User input
                 Console.WriteLine("Input window height: ");
-                windowHeight = Convert.ToByte(Console.ReadLine());
+                windowHeight = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Input window width: ");
-                windowWidth = Convert.ToByte(Console.ReadLine());
+                windowWidth = Convert.ToInt32(Console.ReadLine());
 
                 //Window area
-                windowArea = windowHeight * windowWidth
+                windowArea = windowHeight * windowWidth;
 
             //Minus window area from room
                 //Area of paintable wall
