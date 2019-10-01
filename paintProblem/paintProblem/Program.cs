@@ -6,16 +6,14 @@ namespace paintProblem
     {
         static void Main(string[] args)
         {
-            //Coverage of chosen paint
-            int paint;
-            int roomWidth, roomLength, roomHeight;
+            int paintCoverage = 100;
+            int roomWidth, roomLength, roomHeight, roomArea;
             int windowHeight, windowWidth, windowArea;
-
-
+            
             //Calculate room area
                 //User input
                 Console.WriteLine("Input wall length: ");
-                roomLength = Convert.ToInt32(Console.ReadLine());
+                    roomLength = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Input wall width: ");
                 roomWidth = Convert.ToInt32(Console.ReadLine());                
@@ -23,6 +21,8 @@ namespace paintProblem
                 Console.WriteLine("Input wall height: ");
                 roomHeight = Convert.ToInt32(Console.ReadLine());
 
+            //Room area = 2(H*W)+2(H*L)+(W*L)
+            roomArea = (2*(roomHeight * roomWidth)) + (2*(roomHeight * roomLength)) + (roomWidth * roomLength);
 
             //Calculate window area
                 //User input
