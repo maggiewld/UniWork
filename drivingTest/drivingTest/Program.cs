@@ -8,7 +8,8 @@ namespace drivingTest
 {
     class Program
     {
-        const int LEGAL_AGE = 17;
+        const int LEGAL_AGE_UK = 17;
+        const int LEGAL_AGE_NIGERIA = 18;
 
         static void Main(string[] args)
         {
@@ -33,13 +34,13 @@ namespace drivingTest
                 userInput = Console.ReadLine();
                 userAge = Int32.Parse(userInput);
 
-                if (userAge >= LEGAL_AGE)
+                if (userAge >= LEGAL_AGE_UK)
                 {
                     Console.WriteLine("You're eligable for the test.");
                 }
                 else
                 {
-                    waitTime = LEGAL_AGE - userAge;
+                    waitTime = LEGAL_AGE_UK - userAge;
                     Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
                 }
             }
@@ -50,13 +51,13 @@ namespace drivingTest
                 userInput = Console.ReadLine();
                 userAge = Int32.Parse(userInput);
 
-                if (userAge >= 18)
+                if (userAge >= LEGAL_AGE_NIGERIA)
                 {
                     Console.WriteLine("You're eligable for the test.");
                 }
                 else
                 {
-                    waitTime = 18 - userAge;
+                    waitTime = LEGAL_AGE_NIGERIA - userAge;
                     Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
                 }
             }
