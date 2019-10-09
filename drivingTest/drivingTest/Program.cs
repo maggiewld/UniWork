@@ -16,11 +16,6 @@ namespace drivingTest
             string userInput, userCountry;
             int userAge;
 
-            //Get user's age
-            Console.WriteLine("Please enter your current age in whole years: ");
-            userInput = Console.ReadLine();
-            userAge = Int32.Parse(userInput);
-
             //TODO: Modify the program for Nigeria, where the legal driving age is 18
             //Get User's country
             Console.WriteLine("Are you in the UK or Nigeria: ");
@@ -30,10 +25,17 @@ namespace drivingTest
             //Is the user old enough, factor in country
             //TODO: Modifiy the program to calculate and tell the user how many years they have to wait to be eligible to drive
 
-            if (userAge >= 17)
-                Console.WriteLine("You are old enough to take the test.");
+            if (userCountry == "UK")
+            {
+                Console.WriteLine("You can take the test at 17. How old are you in whole years: ");
+                userInput = Console.ReadLine();
+                userAge = Int32.Parse(userInput);
+
+            }
             else
-                Console.WriteLine("You are not old enough");
+            {
+                Console.WriteLine("You can't take the test.");
+            }
 
             //Pause at end
             Console.ReadLine();
