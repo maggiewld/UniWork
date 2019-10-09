@@ -41,8 +41,23 @@ namespace drivingTest
                     Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
                 }
             }
-            
 
+            if (userCountry == "Nigeria")
+            {
+                Console.WriteLine("You can take the test at 18. How old are you in whole years: ");
+                userInput = Console.ReadLine();
+                userAge = Int32.Parse(userInput);
+
+                if (userAge >= 18)
+                {
+                    Console.WriteLine("You're eligable for the test.");
+                }
+                else
+                {
+                    waitTime = 18 - userAge;
+                    Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
+                }
+            }
 
             //Pause at end
             Console.ReadLine();
