@@ -14,7 +14,7 @@ namespace drivingTest
 
             //Variables for user input
             string userInput, userCountry;
-            int userAge;
+            int userAge, waitTime;
 
             //TODO: Modify the program for Nigeria, where the legal driving age is 18
             //Get User's country
@@ -31,6 +31,15 @@ namespace drivingTest
                 userInput = Console.ReadLine();
                 userAge = Int32.Parse(userInput);
 
+                if (userAge >= 17)
+                {
+                    Console.WriteLine("You're eligable for the test.");
+                }
+                else
+                {
+                    waitTime = 17 - userAge;
+                    Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
+                }
             }
             else
             {
