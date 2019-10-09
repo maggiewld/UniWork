@@ -25,6 +25,8 @@ namespace drivingTest
             //Is the user old enough
             if (userAge > 17)
                 Console.WriteLine("You are old enough to take the test.");
+            else
+                Console.WriteLine("You are not old enough");
 
             //Pause at end
             Console.ReadLine();
