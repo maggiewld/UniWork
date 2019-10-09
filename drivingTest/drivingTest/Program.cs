@@ -8,6 +8,8 @@ namespace drivingTest
 {
     class Program
     {
+        const int LEGAL_AGE = 17;
+
         static void Main(string[] args)
         {
             //This program will ask the user their age and tell them if they are able to take the UK driving test
@@ -31,13 +33,13 @@ namespace drivingTest
                 userInput = Console.ReadLine();
                 userAge = Int32.Parse(userInput);
 
-                if (userAge >= 17)
+                if (userAge >= LEGAL_AGE)
                 {
                     Console.WriteLine("You're eligable for the test.");
                 }
                 else
                 {
-                    waitTime = 17 - userAge;
+                    waitTime = LEGAL_AGE - userAge;
                     Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
                 }
             }
