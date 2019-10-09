@@ -41,10 +41,8 @@ namespace drivingTest
                     Console.WriteLine("You are too young for the test, please wait {0} years", waitTime);
                 }
             }
-            else
-            {
-                Console.WriteLine("You can't take the test.");
-            }
+            
+
 
             //Pause at end
             Console.ReadLine();
